@@ -1,0 +1,53 @@
+.contactFormContainer {
+  margin: 20px;
+  border: solid 2px #0b2447;
+  border-radius: 2%;
+  width: 400px;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+  grid-template-areas:
+    "h2 h2"
+    "firstName lastName"
+    "email email"
+    "query query"
+    "submit submit";
+}
+
+.h2 {
+  grid-area: h2;
+  text-align: center;
+  height: 50px;
+  margin: 10px 0px;
+  font-size: 30px;
+  font-weight: 500;
+  color: #0b2447;
+}
+
+.firstName {
+  grid-area: firstName;
+  width: 100%;
+}
+
+.lastName {
+  grid-area: lastName;
+  width: 100%;
+}
+
+.email {
+  grid-area: email;
+  width: 100%;
+}
+
+.query {
+  grid-area: query;
+  width: 100%;
+}
+
+.submit {
+  text-align: center;
+  grid-area: submit;
+}
